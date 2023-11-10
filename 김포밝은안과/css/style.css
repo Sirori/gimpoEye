@@ -1,0 +1,1471 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap");
+@font-face {
+  font-family: "KoPubWorldBatang";
+  src: url(/fonts/KoPubWorldBatang_ProLight.otf);
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-size: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+img {
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+li {
+  list-style: none;
+}
+address,
+em,
+i {
+  font-style: normal;
+}
+a:focus {
+  outline: none;
+}
+
+/* Layout */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+}
+.wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 75px;
+  padding-top: 35px;
+  position: relative;
+  color: #fff;
+  z-index: 10;
+}
+header .innerHeader {
+  padding: 0 90px;
+  height: 73px;
+  border-bottom: 1px solid rgb(136, 136, 136);
+  overflow: hidden;
+  background: transparent;
+}
+header .innerHeader .logo {
+  width: 180px;
+  height: 100%;
+  float: left;
+  margin-right: 90px;
+}
+header .innerHeader .gnb ul {
+  float: left;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+}
+header .innerHeader .gnb ul li {
+  padding-top: 5px;
+  margin-right: 80px;
+}
+header .innerHeader span {
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 40px;
+  font-weight: normal;
+}
+header .innerHeader .search {
+  height: 100%;
+  float: right;
+  margin-right: 50px;
+}
+header .innerHeader .logIn {
+  height: 100%;
+  float: right;
+}
+
+header .innerHeader .bottom {
+  position: fixed;
+  right: 30px;
+  bottom: 35px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  z-index: 10;
+  padding: 5px;
+}
+header .innerHeader .bottom .pencil {
+  background: #28bb9d;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 40px;
+  padding: 17px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+header .innerHeader .bottom .goTop {
+  background: #fff;
+  color: #000;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 40px;
+  padding: 17px;
+  margin-top: 25px;
+  font-weight: lighter;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+header .innerHeader .bottom .pencil:hover,
+header .innerHeader .bottom .pencil:focus {
+  background: #05604d;
+  color: rgb(227, 226, 226);
+  transition: all 0.4s;
+}
+header .innerHeader .bottom .goTop:hover,
+header .innerHeader .bottom .goTop:focus {
+  background: rgb(44, 44, 44);
+  color: #fff;
+  transition: all 0.4s;
+}
+
+/* visual */
+.visual {
+  width: 100%;
+  height: 969px;
+  overflow: hidden;
+  margin-top: -110px;
+  position: relative;
+}
+.visual .slide li img {
+  width: 100%;
+  filter: brightness(40%);
+}
+.visual .slide li .txt {
+  width: 100%;
+  display: block;
+  float: left;
+  position: absolute;
+  top: 31%;
+  left: 7%;
+}
+.visual .slide li .txt p {
+  font-size: 22px;
+  font-weight: lighter;
+  color: #fff;
+  margin-bottom: 23px;
+}
+.visual .slide li .txt h2 {
+  font-size: 61px;
+  font-family: "KoPubWorldBatang";
+  font-weight: 400;
+  letter-spacing: 70;
+  color: #fff;
+  line-height: 90px;
+}
+.visual .slide li .pgnumber {
+  position: absolute;
+  bottom: 15.5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #fff;
+  font-size: 19px;
+}
+
+.visual .bottom {
+  position: absolute;
+  width: 50%;
+  bottom: 15%;
+  left: 5.5%;
+}
+.visual .bottom .left {
+  float: left;
+}
+.visual .bottom .left li a img {
+  display: block;
+  width: 22px;
+  opacity: 0.6;
+}
+.visual .bottom .left li:nth-child(2) {
+  margin-top: 65px;
+}
+.visual .bottom .left li:nth-child(3) {
+  margin-top: 40px;
+}
+.visual .bottom .left li .scroll {
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  transform: rotate(90deg);
+  margin-left: -8px;
+  margin-top: 60px;
+}
+.visual .bottom .left li .scrollz {
+  position: absolute;
+  left: 1%;
+  bottom: -85%;
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 70%;
+  background: rgb(132, 132, 132);
+  animation: scrollbarani 3s infinite ease-in-out;
+  z-index: 10;
+}
+.visual .bottom .left li .scrollbar {
+  position: absolute;
+  left: 1%;
+  bottom: -85%;
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 70%;
+  background: #fff;
+}
+
+/* hover */
+.visual .bottom .left li a img:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+@keyframes scrollbarani {
+  0% {
+    height: 70%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+/* slick-button */
+.visual .prev span {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  left: 46.5%;
+  bottom: 5%;
+  font-size: 40px;
+}
+.visual .next span {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  right: 46.5%;
+  bottom: 5%;
+  font-size: 40px;
+}
+.visual .next:hover span {
+  color: #28bb9d;
+  transition: all 0.3s;
+}
+.visual .prev:hover span {
+  color: #28bb9d;
+  transition: all 0.3s;
+}
+
+/* section.promise */
+.promise {
+  width: 100%;
+  position: relative;
+  margin-top: 250px;
+  margin-bottom: 200px;
+}
+.promise .top {
+  width: 100%;
+  overflow: hidden;
+}
+.promise .top marquee {
+  position: absolute;
+  left: -100%;
+  color: #888;
+  opacity: 0.1;
+  font-size: 200px;
+  scroll-behavior: infinite ease;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  top: 8%;
+  margin-left: -500px;
+}
+.promise .top h2 {
+  font-size: 120px;
+  margin-top: 180px;
+  margin-left: 150px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+}
+.promise .bottom {
+  width: 1600px;
+  margin: 100px auto;
+}
+.promise .bottom h3 {
+  width: 100%;
+  text-align: right;
+  font-size: 38px;
+  font-family: "NotoSerifKR", serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 60px;
+}
+.promise .bottom p {
+  width: 100%;
+  text-align: right;
+  margin-top: 25px;
+  font-size: 17px;
+  font-family: "Noto Sans KR", serif;
+  font-weight: 500;
+  color: #555;
+}
+
+/* animation */
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+.promise .top h2.motion {
+  animation-name: slide-up;
+  animation-duration: 0.7s;
+}
+.promise .bottom h3.motion {
+  animation-name: slide-up;
+  animation-duration: 1s;
+}
+.promise .bottom p:nth-child(2).motion {
+  animation-name: slide-up;
+  animation-duration: 1.2s;
+}
+.promise .bottom p:nth-child(3).motion {
+  animation-name: slide-up;
+  animation-duration: 1.5s;
+}
+.promise .bottom p:nth-child(4).motion {
+  animation-name: slide-up;
+  animation-duration: 1.8s;
+}
+
+/* section.medical */
+.medical .inner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.medical .inner .txtBox {
+  width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.medical .inner .txtBox h2 {
+  font-size: 125px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  color: #888;
+  opacity: 0.1;
+}
+.medical .inner .txtBox h3 {
+  font-size: 40px;
+  color: #333;
+  margin-top: -11px;
+}
+.medical .inner .txtBox p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 11px;
+}
+.medical .inner .slide2 {
+  width: 1880px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-left: 150px;
+  padding-right: 140px;
+}
+.medical .inner .slide2 li {
+  box-sizing: border-box;
+  width: 100%;
+  margin-right: 30px;
+  color: #fff;
+  margin-bottom: 250px;
+}
+.medical .inner .slide2 li a span {
+  font-family: "KoPubWorldBatang";
+  font-size: 18px;
+}
+.medical .inner .slide2 li a h3 {
+  font-size: 32px;
+}
+.medical .inner .slide2 li a .txt {
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.slide2 .slick-list .slick-slide a img {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+.medical .inner .slide2 .slick-next {
+  position: absolute;
+  top: 45%;
+  right: 6%;
+  z-index: 3;
+  line-height: 60px;
+  z-index: 20;
+  border: none;
+  text-indent: -9999px;
+}
+.medical .inner .slide2 .slick-prev {
+  position: absolute;
+  top: 45%;
+  left: 4%;
+  z-index: 3;
+  line-height: 60px;
+  z-index: 20;
+  border: none;
+  text-indent: -9999px;
+}
+.medical .inner .slide2 .slick-prev::after {
+  content: "\f060";
+  font-family: fontAwesome;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  text-indent: 0;
+  left: 0;
+  top: -100px;
+  font-size: 40px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.medical .inner .slide2 .slick-next::after {
+  content: "\f061";
+  font-family: fontAwesome;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  text-indent: 0;
+  left: 0;
+  top: -100px;
+  font-size: 40px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.medical .inner .slide2 .slick-prev:hover {
+  transform: translateX(-15px);
+  transition: all 0.5s;
+}
+.medical .inner .slide2 .slick-next:hover {
+  transform: translateX(15px);
+  transition: all 0.5s;
+}
+.medical .inner .backimg {
+  position: absolute;
+  z-index: -1;
+  top: 27%;
+  width: 140%;
+  height: 100%;
+  left: -16%;
+}
+.medical .inner .backimg img {
+  width: 100%;
+}
+
+.medical .inner .bottomBox {
+  width: 1600px;
+  margin: 0 auto;
+  color: #fff;
+}
+.medical .inner .bottomBox h2 {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 120px;
+}
+.medical .inner .bottomBox span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 10px;
+}
+.medical .inner .bottomBox .bottom {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 80px;
+  margin-bottom: 200px;
+}
+.medical .inner .bottomBox .bottom h3 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.medical .inner .bottomBox .bottom p {
+  font-size: 17px;
+  font-weight: 100;
+  opacity: 0.8;
+  margin-bottom: 60px;
+}
+.medical .inner .bottomBox .bottom .img {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.medical .inner .bottomBox .bottom .img img {
+  opacity: 1;
+  width: 1600px;
+}
+.medical .inner .bottomBox .bottom .img span {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: #28bb9d;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+.medical .inner .bottomBox .bottom .img i {
+  font-size: 50px;
+  font-weight: 100;
+  line-height: 120px;
+  text-align: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.medical .inner .bottomBox .bottom .img:hover i {
+  animation-name: rotate;
+  animation-duration: 0.3s;
+}
+
+.medical .inner .txtBox h3.motion {
+  animation-name: slide-up;
+  animation-duration: 1s;
+}
+.medical .inner .txtBox p.motion {
+  animation-name: slide-up;
+  animation-duration: 1.4s;
+}
+.medical .inner .bottomBox h2.motion {
+  animation-name: slide-up;
+  animation-duration: 1s;
+}
+.medical .inner .bottomBox h3.motion {
+  animation-name: slide-up;
+  animation-duration: 1.3s;
+}
+.medical .inner .bottomBox .txt.motion {
+  animation-name: slide-up;
+  animation-duration: 1.5s;
+}
+.medical .inner .bottomBox p.motion {
+  animation-name: slide-up;
+  animation-duration: 1.7s;
+}
+
+@keyframes slide-up-img {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+    border-radius: 400px;
+  }
+}
+
+.medical .inner .bottomBox .bottom .img img.motion {
+  animation-name: slide-up-img;
+  animation-duration: 2.2s;
+}
+
+@keyframes slide-up-span {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(50px);
+    transform: translateX(-50%);
+  }
+}
+.medical .inner .bottomBox .bottom .img span.motion {
+  animation-name: slide-up-span;
+  animation-duration: 1.8s;
+}
+
+/* section.story */
+.story .inner {
+  width: 1600px;
+  margin: 0 auto;
+  padding-top: 220px;
+  overflow: hidden;
+  display: flex;
+  padding-bottom: 180px;
+}
+.story .inner .left {
+  float: left;
+  width: 40%;
+  padding-right: 160px;
+}
+.story .inner .left .img img {
+  width: 100%;
+  display: block;
+}
+.story .inner .left p {
+  float: right;
+  display: block;
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.story .inner .left p span {
+  font-size: 20px;
+  font-family: "KoPubWorldBatang";
+  font-weight: 600;
+  margin-left: 10px;
+}
+.story .inner .right {
+  width: 60%;
+  margin-top: 20px;
+}
+.story .inner .right h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 120px;
+}
+.story .inner .right h3 {
+  margin-top: 100px;
+  font-size: 34px;
+  color: #333;
+  margin-bottom: 60px;
+}
+.story .inner .right .txt {
+  font-size: 17px;
+  color: #444;
+  font-weight: 400;
+  letter-spacing: 1.4;
+  margin-bottom: 25px;
+}
+.story .inner .right a {
+  margin-top: 100px;
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 13px 35px;
+  border-radius: 50px;
+  font-size: 17px;
+  color: #444;
+}
+.story .inner .right a:hover {
+  background: #000;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+/* animation */
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+@keyframes slide-left2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-700px);
+  }
+}
+
+.story .inner .left .img.motion {
+  animation-name: slide-left;
+  animation-duration: 2s;
+}
+.story .inner .left p.motion {
+  animation-name: slide-left2;
+  animation-duration: 2s;
+}
+.story .inner .right h2.motion {
+  animation-name: slide-up;
+  animation-duration: 1.5s;
+}
+.story .inner .right h3.motion {
+  animation-name: slide-up;
+  animation-duration: 1.7s;
+}
+.story .inner .right .txt:nth-child(3).motion {
+  animation-name: slide-up;
+  animation-duration: 1.9s;
+}
+.story .inner .right .txt:nth-child(4).motion {
+  animation-name: slide-up;
+  animation-duration: 2.2s;
+}
+.story .inner .right .txt:nth-child(5).motion {
+  animation-name: slide-up;
+  animation-duration: 2.5s;
+}
+.story .inner .right .txt:nth-child(6).motion {
+  animation-name: slide-up;
+  animation-duration: 2.8s;
+}
+.story .inner .right a {
+  animation-name: slide-up;
+  animation-duration: 3s;
+}
+
+/* section.care */
+.care {
+  background: #f4f5f7 url("../img/care-bg.png") no-repeat -200px 0 / contain;
+  padding: 240px 0 150px;
+}
+.care .inner {
+  width: 1600px;
+  margin: 0 auto;
+}
+.care .inner .top {
+  text-align: center;
+  margin-bottom: 190px;
+}
+.care .inner .top h2 {
+  font-size: 120px;
+  font-family: "Cormorant Garamond", serif;
+}
+.care .inner .top p {
+  margin-top: 30px;
+  font-size: 17px;
+  color: #444;
+}
+.care .inner .container {
+  display: flex;
+  width: 100%;
+}
+.care .inner .container .left {
+  width: 40%;
+}
+.care .inner .container .left h3 {
+  font-size: 34px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.care .inner .container .left .first {
+  color: #444;
+  font-size: 19px;
+  margin-bottom: 80px;
+}
+.care .inner .container .left .second {
+  font-family: "KoPubWorldBatang";
+  font-size: 28px;
+  color: #333;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.care .inner .container .left .last {
+  font-size: 17px;
+  color: #555;
+}
+.care .inner .container .left a {
+  margin-top: 80px;
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 13px 35px;
+  border-radius: 50px;
+  font-size: 17px;
+  color: #444;
+}
+.care .inner .container .left a:hover {
+  background: #000;
+  color: #fff;
+  transition: all 0.3s;
+}
+.care .inner .container .right {
+  width: 60%;
+}
+.care .inner .container .right ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+.care .inner .container .right ul li {
+  width: 40%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.care .inner .container .right ul li:nth-child(2n) {
+  width: 60%;
+}
+.care .inner .container .right ul li img {
+  width: 68px;
+  max-height: 60px;
+  margin-bottom: 10px;
+}
+.care .inner .container .right ul li p {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-family: "KoPubWorldBatang";
+  color: #444;
+}
+.care .inner .container .right ul li span {
+  font-size: 16px;
+  color: #777;
+}
+
+/* animation */
+.care .inner .top h2.motion {
+  animation-name: slide-up;
+  animation-duration: 1.5s;
+}
+.care .inner .top p.motion {
+  animation-name: slide-up;
+  animation-duration: 1.7s;
+}
+.care .inner .container .left h3.motion {
+  animation-name: slide-up;
+  animation-duration: 1.9s;
+}
+.care .inner .container .left .first.motion {
+  animation-name: slide-up;
+  animation-duration: 2.1s;
+}
+.care .inner .container .left .second.motion {
+  animation-name: slide-up;
+  animation-duration: 2.3s;
+}
+.care .inner .container .left .last.motion {
+  animation-name: slide-up;
+  animation-duration: 2.5s;
+}
+.care .inner .container .left a.motion {
+  animation-name: slide-up;
+  animation-duration: 2.7s;
+}
+.care .inner .container .right ul li:nth-child(1).motion {
+  animation-name: slide-up;
+  animation-duration: 1.5s;
+}
+.care .inner .container .right ul li:nth-child(2).motion {
+  animation-name: slide-up;
+  animation-duration: 1.8s;
+}
+.care .inner .container .right ul li:nth-child(3).motion {
+  animation-name: slide-up;
+  animation-duration: 2.1s;
+}
+.care .inner .container .right ul li:nth-child(4).motion {
+  animation-name: slide-up;
+  animation-duration: 2.4s;
+}
+.care .inner .container .right ul li:nth-child(5).motion {
+  animation-name: slide-up;
+  animation-duration: 2.7s;
+}
+.care .inner .container .right ul li:nth-child(6).motion {
+  animation-name: slide-up;
+  animation-duration: 3s;
+}
+.care .inner .container .right ul li:nth-child(7).motion {
+  animation-name: slide-up;
+  animation-duration: 3.3s;
+}
+
+/* section.review */
+.review {
+  width: 1600px;
+  margin: 0 auto;
+  padding: 220px 0 200px;
+  overflow: hidden;
+}
+.review .topBox {
+  width: 100%;
+  text-align: center;
+}
+.review .topBox h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 120px;
+}
+.review .topBox p {
+  font-size: 17px;
+  margin-top: 10px;
+  color: #333;
+}
+.review .imgBox {
+  width: 50%;
+  overflow: hidden;
+  margin-top: 100px;
+  float: left;
+  display: inline-block;
+}
+.review .imgBox img {
+  width: 100%;
+}
+.review .rightBox {
+  width: 42%;
+  margin-top: 100px;
+  display: inline-block;
+  padding-left: 60px;
+  float: right;
+}
+.review .rightBox .tit {
+  font-family: "KoPubWorldBatang";
+  margin-top: 45px;
+  font-size: 30px;
+  color: #444;
+  margin-bottom: 25px;
+}
+.review .rightBox .txt {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 50px 0;
+  background: rgb(245, 245, 245);
+  text-align: center;
+  color: #777;
+  font-size: 15px;
+}
+.review .rightBox a {
+  margin-top: 100px;
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 13px 35px;
+  border-radius: 50px;
+  font-size: 17px;
+  color: #444;
+}
+.review .rightBox a:hover {
+  background: #000;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+/* animation */
+.review .topBox h2.motion {
+  animation-name: slide-up;
+  animation-duration: 1.3s;
+}
+.review .topBox p.motion {
+  animation-name: slide-up;
+  animation-duration: 1.6s;
+}
+.review .imgBox img.motion {
+  animation-name: slide-up;
+  animation-duration: 1.9s;
+}
+.review .rightBox.motion {
+  animation-name: slide-up;
+  animation-duration: 2.3s;
+}
+
+/* section.notice */
+.notice {
+  width: 100%;
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 400px;
+}
+.notice .left {
+  width: 30%;
+  float: left;
+  margin-left: 150px;
+}
+.notice .left h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 120px;
+  margin-bottom: 15px;
+}
+.notice .left p {
+  font-size: 17px;
+  color: #444;
+}
+.notice .left a {
+  margin-top: 120px;
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 13px 35px;
+  border-radius: 50px;
+  font-size: 17px;
+  color: #444;
+}
+.notice .left a:hover {
+  background: #000;
+  color: #fff;
+  transition: all 0.3s;
+}
+.notice .right {
+  width: 70%;
+  margin-left: 300px;
+  position: relative;
+}
+.notice .right .slide3 {
+  position: absolute;
+  width: 1200px;
+  left: -10%;
+}
+.notice .right li a {
+  overflow: hidden;
+}
+.notice .right li a h3 {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #333;
+}
+.notice .right li a p {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #666;
+  text-align: justify;
+}
+.notice .right li a img {
+  width: 452px;
+}
+.slide3 .slick-list {
+  padding: 0 20% 0 0 !important;
+}
+
+/* animation */
+.notice .left h2.motion {
+  animation-name: slide-up;
+  animation-duration: 1.2s;
+}
+.notice .left p.motion {
+  animation-name: slide-up;
+  animation-duration: 1.4s;
+}
+.notice .left a.motion {
+  animation-name: slide-up;
+  animation-duration: 1.6s;
+}
+
+/* section.consulting */
+.consulting {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  background: rgb(248, 248, 248);
+}
+.consulting .leftBox {
+  width: 50%;
+  display: block;
+  box-sizing: border-box;
+  padding: 100px 175px 100px;
+  position: relative;
+}
+.consulting .leftBox h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+.consulting .leftBox p {
+  font-size: 16px;
+  color: #333;
+}
+.consulting .leftBox .number {
+  font-size: 49px;
+  margin-top: 50px;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 2;
+  display: inline-block;
+  margin-right: 25px;
+  margin-bottom: 40px;
+}
+.consulting .leftBox a {
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  background: #000;
+  color: #fff;
+  line-height: 14px;
+  display: inline-block;
+  vertical-align: 10px;
+}
+.consulting .leftBox a:hover {
+  background: #28bb9d;
+  transition: all 0.3s;
+}
+.consulting .leftBox h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+.consulting .leftBox .address {
+  margin-bottom: 40px;
+}
+.consulting .leftBox .time {
+  line-height: 30px;
+}
+.consulting .leftBox .time span {
+  display: inline-block;
+  background: #28bb9d;
+  border-radius: 50px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  padding: 1px 5px;
+  margin-left: 5px;
+}
+.consulting .leftBox .con {
+  position: absolute;
+  left: -37%;
+  top: 45%;
+  transform: rotate(90deg);
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 120px;
+  opacity: 0.1;
+  color: #888;
+}
+
+.consulting .rightBox {
+  width: 50%;
+  display: block;
+  box-sizing: border-box;
+  padding: 100px 160px 100px;
+  background: #28bb9d url("../img/map_right_bg.png") no-repeat 270px 270px /
+    contain;
+}
+.consulting .rightBox h2 {
+  font-size: 38px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+.consulting .rightBox p {
+  font-size: 17px;
+  color: #fff;
+  margin-bottom: 70px;
+  line-height: 25px;
+}
+.consulting .rightBox .res {
+  width: 100%;
+}
+.consulting .rightBox .res select {
+  width: 45%;
+  font-size: 18px;
+  padding: 20px 50px 20px 10px;
+  background: #25a48b;
+  color: #f4f5f7;
+  border: none;
+  display: block;
+  margin-bottom: 15px;
+  line-height: 18px;
+}
+.consulting .rightBox .res select option {
+  font-size: 18px;
+  padding: 20px 50px 20px 10px;
+  background: #25a48b;
+  color: #f4f5f7;
+}
+.consulting .rightBox .res .input {
+  display: inline-block;
+}
+.consulting .rightBox .res .name {
+  width: 25%;
+  margin-right: 10px;
+  font-size: 18px;
+  padding: 20px 50px 15px 20px;
+  background: #25a48b;
+  color: #fff;
+  border: none;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+.consulting .rightBox .res .number {
+  width: 50%;
+  font-size: 18px;
+  padding: 20px 0 15px 20px;
+  background: #25a48b;
+  color: #fff;
+  border: none;
+}
+.consulting .rightBox .res .date {
+  width: 25%;
+  margin-right: 10px;
+  font-size: 18px;
+  padding: 20px 50px 15px 20px;
+  background: #25a48b;
+  color: #fff;
+  border: none;
+  line-height: 18px;
+}
+.consulting .rightBox .res .time {
+  width: 50%;
+  font-size: 18px;
+  padding: 20px 0 15px 20px;
+  background: #25a48b;
+  color: #fff;
+  border: none;
+}
+input::placeholder {
+  color: #f4f5f7;
+  line-height: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.consulting .rightBox .agree {
+  font-size: 16px;
+  color: #c0ebe3;
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+.consulting .rightBox .agreebt {
+  display: inline-block;
+  background: #d3e4e1;
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000;
+  padding: 3px 12px;
+  margin-left: 5px;
+}
+.consulting .rightBox .apply {
+  width: 92%;
+  background: #bfe6de;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-size: 19px;
+  font-weight: 600;
+  color: #25a48b;
+}
+.consulting .rightBox .apply:hover {
+  background: #fff;
+  transition: all 0.5s;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.map {
+  width: 100%;
+  height: 850px;
+  position: relative;
+  overflow: hidden;
+}
+.map ul {
+  display: flex;
+  justify-content: space-between;
+}
+.map ul li {
+  position: absolute;
+  z-index: 3;
+}
+.map ul li a {
+  display: flex;
+  flex-direction: column;
+}
+.map ul li a img {
+  filter: brightness(0.7);
+}
+.map ul li a p {
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  padding: 10px 0px 10px 10px;
+}
+.map ul li a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 40px;
+}
+.map ul li:nth-child(1) {
+  top: 6%;
+  left: 9%;
+}
+.map ul li:nth-child(2) {
+  top: 6%;
+  left: 23%;
+}
+.map ul li:nth-child(3) {
+  top: 6%;
+  left: 37%;
+}
+.map #daumRoughmapContainer1665122903917 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transform: scale(1.1);
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background: #000;
+  color: #888;
+}
+footer .inner {
+  width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  padding: 0 20px;
+}
+footer .inner .left {
+  float: left;
+  margin: 70px 0;
+  width: 50%;
+}
+footer .inner .left img {
+  width: 190px;
+  margin-bottom: 30px;
+  display: block;
+}
+footer .inner .left p {
+  font-size: 17px;
+  display: inline-block;
+  line-height: 25px;
+}
+footer .inner .left p span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+footer .inner .left .copyright {
+  display: block;
+}
+footer .inner .right {
+  float: right;
+  margin: 70px 0;
+  width: 50%;
+}
+footer .inner ul {
+  display: flex;
+  float: right;
+  flex-direction: column;
+}
+footer .inner ul li:nth-child(1) {
+  margin-bottom: 20px;
+}
+footer .inner ul li:nth-child(2) a {
+  opacity: 0.6;
+  float: right;
+}
+footer .inner ul li:nth-child(2) a:nth-child(1) {
+  margin-left: 40px;
+}
+footer .inner ul li:nth-child(2) a:hover {
+  opacity: 1;
+  transition: all 0.5s;
+}
+footer .inner .right ul li a {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+footer .inner .right ul li a:nth-child(2) {
+  font-weight: bold;
+  margin-left: 20px;
+}
+footer .inner .right ul li a img {
+  width: 25px;
+}
