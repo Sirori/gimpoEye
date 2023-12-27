@@ -258,7 +258,7 @@ header .innerHeader .bottom .goTop:focus {
 }
 .visual .slide li .pgnumber {
   position: absolute;
-  bottom: 15.5%;
+  bottom: 10.5%;
   left: 50%;
   transform: translate(-50%, 0);
   color: #fff;
